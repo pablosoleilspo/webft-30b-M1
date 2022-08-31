@@ -22,7 +22,7 @@ var c = function(a, b, c) {
     var x = 5;
   }
   f(a,b,c);
-  console.log(b);//10...
+  console.log(b);//9
 }
 c(8,9,10);
 console.log(b);//10
@@ -84,13 +84,13 @@ console.log(pm);//franco
 7 / 0 // infinity
 {}[0] //[0]
 parseInt("09") //9
-5 && 2 //2
+5 && 2 //2 (y devuelve el segundo elemnto verdader)
 2 && 5 //5
-5 || 0 //5
+5 || 0 //5 (o devuelve el primer numero v)
 0 || 5 //5
-[3]+[3]-[10] //23
-3>2>1 //false
-[] == ![] //
+[3]+[3]-[10] // '3'+'3'='33' - '10' (23)
+3>2>1 //false true>1 false === 1>1
+[] == ![] //true
 ```
 
 > Si te quedó alguna duda repasá con [este artículo](http://javascript.info/tutorial/object-conversion).
@@ -151,7 +151,7 @@ console.log(obj.prop.getFullname());//aurelio de rosa
 
 var test = obj.prop.getFullname;
 
-console.log(test());//juan perez...
+console.log(test());//undefined no esta definido
 ```
 
 ### Event loop
