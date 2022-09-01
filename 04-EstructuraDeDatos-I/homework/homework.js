@@ -51,7 +51,14 @@ Queue.prototype.dequeue = function(){
 Queue.prototype.size = function(){
   return this.array.length
 }
-
+/*queue = new Queue();
+queue.enqueue('pablo')
+queue.enqueue('sam')
+queue.enqueue('sam')
+queue.dequeue()
+queue.dequeue()
+console.log(queue.array)
+console.log(queue.size());*/
 
 // No modifiquen nada debajo de esta linea
 // --------------------------------
