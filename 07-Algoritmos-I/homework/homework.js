@@ -8,18 +8,14 @@ function factorear(num) {
   // Tu código:
 var array = [1];
 var n = 2;
-while(num >1 && n<= num)
+while(num > 1)
 {
 if(num % n == 0 ){
   array.push(n)
   num = num / n;
 }
-else if(n === num){
-array.push(n);
-break;
-}
-else{
-  n++;
+else {
+n++;
 }
 }
 return array;
